@@ -1,0 +1,58 @@
+$blue: #2265c1
+$white: #f2f2f2
+$pink: #a26aa2
+$gray: #d8d8d8
+$whiteBg: #f9f9f9
+.main__page
+    height: 100vh
+    width: 100%
+    background-image: linear-gradient(to top right, $blue, $pink)
+    position: relative
+    .main__scroll__text
+        color: $gray
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        animation: scroll 5s infinite
+        bottom: 8px
+    .main__content__wrapper
+        width: 90%
+        height: 400px
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        .main__title
+            color: $white
+            text-align: left
+            font-size: 42px
+        .main__subtext
+            color: $gray
+            font-size: 18px
+            text-align: left
+            padding-top: 10px
+        .main__btn
+            color: $white
+            border: 3px solid $white
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 30px
+            margin-top: 20px
+            height: 38px
+            width: 150px
+
+.about__section
+    height: 100vh
+    background-color: $whiteBg
+
+//Animations
+@keyframes scroll
+    0%
+        opacity: 1
+    50%
+        opacity: 0
+    100%
+        opacity: 1
+
+            
