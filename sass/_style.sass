@@ -46,7 +46,7 @@ $darkPurp: #32075e
             width: 150px
 
 .about__section
-    height: 110vh
+    height: 670px
     background-color: $whiteBg
     position: relative
     .about__image__wrapper
@@ -81,13 +81,137 @@ $darkPurp: #32075e
         text-align: center
         padding-top: 28px
 
-
-
-
+.shop__section
+    width: 100%
+    height: 740px
+    background-color: $whiteBg
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    .shop__title
+        padding-top: 22px
+        text-align: center
+        font-size: 34px
+        color: $blue
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            bottom: -10px
+            left: 50%
+            transform: translateX(-50%)
+            width: 60px
+            border-top: 4px solid $pinkSec
+    .shop__item
+        height: 300px
+        width: 300px
+        background-image: linear-gradient(to top right, $blue, $pink)
+        border-radius: 20px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        .shop__image
+            height: 160px
+            width: 160px
+        .shop__subtext
+            color: $white
+            font-weight: 600
+            font-size: 22px
+        .shop__buy
+            outline: none
+            border: 2px solid $white
+            background-color: Transparent
+            color: $white
+            margin-top: 15px
+            border-radius: 15px
+            width: 130px
+            font-size: 18px
+            height: 32px
+.good__part
+    height: 440px
+    width: 100%
+    background-color: $whiteBg
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    .part_1, .part_2, .part_3
+        color: $white
+        width: 300px
+        height: 100px
+        line-height: 100px
+        padding-left: 15px
+    .part_1
+        background-color: #1cbc74
+    .part_2
+        background-color: #09a4f2
+    .part_3
+        background-color: #7b2196
+.title_part
+    padding-top: 22px
+    text-align: center
+    font-size: 34px
+    color: $blue
+    position: relative
+    &::after
+        content: ""
+        position: absolute
+        bottom: -10px
+        left: 50%
+        transform: translateX(-50%)
+        width: 60px
+        border-top: 4px solid $pinkSec
+.chat
+    width: 65px
+    height: 65px
+    border-radius: 50%
+    position: fixed
+    left: 10px
+    bottom: 10px
+    background-image: linear-gradient(to top right, $blue, $pink)
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 2px solid $white
+.chatphoto
+    width: 45px
+    height: 45px
+.contact
+    height: 200px
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-image: linear-gradient(to top right, #1cbc74, #09a4f2)
+    .contact__me
+        color: $white
+        font-size: 32px
+    a
+        text-decoration: none
+        color: $white
+        font-size: 18px
+    
+    
 //Mediqqueries
+@media (min-width: 930px)
+    .main__page
+        height: 90vh
+        .main__content__wrapper
+            left: 30%
+            width: 500px
+            .main__title
+                font-size: 62px
+            .main__subtext
+                font-size: 24px
+
 @media (max-width: 320px)
     .about__section
-        height: 130vh
+        height: 700px
+
+
 
 //Animations
 @keyframes scroll
