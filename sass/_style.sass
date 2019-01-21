@@ -2,7 +2,10 @@ $blue: #2265c1
 $white: #f2f2f2
 $pink: #a26aa2
 $gray: #d8d8d8
+$ocean: #06cde8
 $whiteBg: #f9f9f9
+$pinkSec: #cd38dc
+$darkPurp: #32075e
 .main__page
     height: 100vh
     width: 100%
@@ -43,8 +46,48 @@ $whiteBg: #f9f9f9
             width: 150px
 
 .about__section
-    height: 100vh
+    height: 110vh
     background-color: $whiteBg
+    position: relative
+    .about__image__wrapper
+        height: 310px
+        width: 310px
+        .about__image
+            height: 300px
+            width: 300px
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            top: 25px
+    .about__title
+        padding-top: 22px
+        text-align: center
+        font-size: 34px
+        color: $blue
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            bottom: -10px
+            left: 50%
+            transform: translateX(-50%)
+            width: 60px
+            border-top: 4px solid $pinkSec
+    .about__subtext
+        color: $darkPurp
+        padding-left: 5%
+        padding-right: 5%
+        font-size: 20px
+        text-align: center
+        padding-top: 28px
+
+
+
+
+//Mediqqueries
+@media (max-width: 320px)
+    .about__section
+        height: 130vh
 
 //Animations
 @keyframes scroll
@@ -55,4 +98,3 @@ $whiteBg: #f9f9f9
     100%
         opacity: 1
 
-            
