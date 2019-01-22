@@ -110,6 +110,7 @@ $darkPurp: #32075e
         border-radius: 20px
         display: flex
         flex-direction: column
+        flex-wrap: nowrap
         align-items: center
         justify-content: center
         .shop__image
@@ -193,7 +194,13 @@ $darkPurp: #32075e
         text-decoration: none
         color: $white
         font-size: 18px
-    
+.shop__wrap
+    width: 100%
+    height: 700px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around   
     
 //Mediqqueries
 @media (min-width: 930px)
@@ -210,12 +217,71 @@ $darkPurp: #32075e
                 cursor: pointer
                 float: left;
                 margin-right: 40px
-        .main__scroll__text
+                &:hover
+                    background-color: rgba(142, 142, 142, 0.36)
+    .shop__section
+        height: 600px
+        .shop__wrap
+            width: 920px
+            height: 300px
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: space-around
+            .shop__buy
+                cursor: pointer
+                &:hover
+                    background-color: rgba(142, 142, 142, 0.36)
+        
+    .contact
+        height: 100px
+@media (min-width: 1330px)
+    .about__section
+        height: 600px
+        .about__image__wrapper
+            left: 20%
+            top: 50%
+            width: 400px
+            height: 400px
+            .about__image
+                top: 50%
+                left: 20%
+                width: 400px
+                height: 400px
+                transform: translateY(-50%)
+    .about__content__wrapper
+        position: absolute
+        right: 20%
+        top: 50%
+        transform: translateY(-50%)
+        width: 400px
+        height: 400px
+        .about__title, .about__subtext
+            text-align: left
+            padding-left: 0
+            &::after
+                left: 32px
+        .about__subtext
             font-size: 22px
+    
+
 
 @media (max-width: 320px)
     .about__section
         height: 700px
+
+@media (max-width: 1300px) and (min-width: 600px)
+    .about__section
+        height: 460px
+    .shop__section
+        margin-top: 100px
+@media (max-width: 1310px) and (min-width: 1000px)
+    .shop__section
+        margin-top: 50px
+
+@media (max-width: 580px) and (min-width: 420px)
+    .about__section
+        height: 670px
 
 
 
