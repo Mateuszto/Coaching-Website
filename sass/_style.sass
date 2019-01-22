@@ -6,6 +6,7 @@ $ocean: #06cde8
 $whiteBg: #f9f9f9
 $pinkSec: #cd38dc
 $darkPurp: #32075e
+$chatColor: #d1d1d1
 .main__page
     height: 100vh
     width: 100%
@@ -201,7 +202,49 @@ $darkPurp: #32075e
     flex-direction: column
     align-items: center
     justify-content: space-around   
-    
+
+.active__chat
+    position: fixed
+    bottom: 35px
+    left: 35px
+    width: 250px
+    height: 310px
+    background-color: $chatColor
+    border-radius: 15px
+    overflow: hidden
+    display: none
+    .chat__menu
+        background-image: linear-gradient(to top right, #1cbc74, #09a4f2)
+        height: 40px
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+    .chat__menu h4
+        color: $darkPurp
+    .chat__title
+        color: #919191
+        line-height: 310px
+        text-align: center
+        font-weight: 900
+    .close
+        cursor: pointer
+        font-size: 33px
+        transform: rotate(45deg)
+    .chat__type
+        height: 50px
+        width: 100%
+        position: absolute
+        left: 0
+        bottom: 0
+        padding-left: 40px
+        font-size: 20px
+        outline: none
+        border: none
+
+.active__menu__click
+    display: block  
+
 //Mediqqueries
 @media (min-width: 930px)
     .main__page
@@ -235,6 +278,7 @@ $darkPurp: #32075e
         
     .contact
         height: 100px
+
 @media (min-width: 1330px)
     .about__section
         height: 600px
