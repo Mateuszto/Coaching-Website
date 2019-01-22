@@ -4,7 +4,7 @@ But i only want to practice Sass and it worked, I've learned a lot of this pre-p
 
 *JANUARY 2019*
 
-###Tech
+###Tech###
 * HTML
 * SASS (Practice)
 * Javascript (A little bit)
